@@ -39,13 +39,13 @@
                           <a class="nav-link" aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Quienes somos</a>
+                          <a class="nav-link" href="#section-quienes-somos">Quienes somos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Destacados</a>
+                          <a class="nav-link" href="#section-destacados">Destacados</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Contacto</a>
+                          <a class="nav-link" href="#section-contacto">Contacto</a>
                       </li>
                   </ul>
               </div>
@@ -75,9 +75,9 @@
         </button>
     </div>
     </header>
-    <main class="bg-black text-white">
+    <main class="bg-black text-white pb-4">
       <div class="container">
-        <section>
+        <section id="section-quienes-somos" class="d-none d-lg-block">
           <h2 class="text-center py-4">¿QUIÉNES SOMOS?</h2>
           <hr>
           <div class="row pt-3">
@@ -96,21 +96,20 @@
           </div>
         </section>
 
-        <section>
+        <section id="section-destacados">
           <h2 class="text-center py-4">DESTACADOS</h2>
           <hr>
           <div class="row gap-4 d-flex justify-content-center">
-            <div class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
+            <div id="card-1" class="card col-3 px-0 bg-info text-white" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Laguna los 2 patos">
               <img src="assets/img/card1.jpg" class="card-img-top" alt="lago">
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates impedit, laboriosam nesciunt quisquam</p>
               </div>
             </div>
-         
-         
-            <div class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
-              <img src="assets/img/card2.jpg" class="card-img-top" alt="lago">
+
+            <div id="card-2" class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
+              <img id="card-2-img" src="assets/img/card2.jpg" class="card-img-top" alt="lago">
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates impedit, laboriosam nesciunt quisquam</p>
@@ -118,15 +117,14 @@
             </div>
           
           
-            <div class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
+            <div id="card-3" class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
               <img src="assets/img/card3.jpg" class="card-img-top" alt="lago">
               <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <h5 id="card-3-title" class="card-title">Lorem ipsum dolor sit amet</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates impedit, laboriosam nesciunt quisquam</p>
               </div>
             </div>
           
-         
             <div class="card col-3 px-0 bg-info text-white" style="width: 18rem;">
                 <img src="assets/img/card4.jpg" class="card-img-top" alt="lago">
                 <div class="card-body">
@@ -137,7 +135,7 @@
           </div>
         </section>
         
-        <section>
+        <section id="section-contacto">
           <h2 class="text-center py-4">CONTACTO</h2>
           <hr>
           <form action="">
@@ -152,18 +150,21 @@
             </div>
             
             <div class="mb-3">
-              <label for="" class="form-label">Mensaje</label>
-              <textarea class="form-control" name="" id="" rows="3"></textarea>
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" name="mensaje" id="mensaje" rows="3"></textarea>
             </div>
             <button class="btn btn-info text-white">Enviar</button>
           </form>
         </section>
       </div>
     </main>
-    <footer class="bg-info">
-      <p>VIAJES CHILE</p>
-      <div>
+    <footer class="bg-info text-white d-flex justify-content-evenly align-items-center p-2">
+      <div>VIAJES CHILE</div>
+      <div class="d-flex gap-2">
         <i class="fa-brands fa-square-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
