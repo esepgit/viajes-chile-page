@@ -21,3 +21,10 @@ i {
 .card-img-top {
   height: 150px;
 }
+
+.carousel-img {
+  mask-image: linear-gradient(
+    black 80%,
+    transparent
+  );
+}
